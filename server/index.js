@@ -1,6 +1,8 @@
 // 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
 
 
+
+console.log("this is Node js")
 // import { Configuration, OpenAIApi } from "openai";
 const { Configuration, OpenAIApi } = require("openai");
 const express = require('express');
@@ -12,7 +14,7 @@ const cors = require('cors')
 
 const configuration = new Configuration({
     organization: "org-ul5eXL12sxPP8lPdMeUZXtBE", 
-    apiKey: "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",
+    apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 // const response = await openai.listEngines(); 
@@ -58,6 +60,6 @@ app.get('/models', async (req, res) => {
         })
 });
 app.listen(port, () => {
-        console.log(`Exemple app listening at http://localhost:${port}`)
+        console.log(`Exemple app listening at https://prestashop.5.youpihost.fr/server`)
 });
 

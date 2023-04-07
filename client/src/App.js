@@ -60,8 +60,24 @@ function App() {
             New Chat
           </div>
 
-          <div className="models">
+          <div className='chat-input-holder'>
+            <form onSubmit={handleSubmit}>
+
+            
+            <textarea
+            rows="1"
+            placeholder='Tap here your Message'
+            value={input}
+            onChange={(e) => setInput(e.target.value)  }
+            className='chat-input-textarea'
+            
+            />
+
+            <button  className='button' >Send</button>
            
+
+            </form>
+
           </div>
         </aside>
 
@@ -77,22 +93,7 @@ function App() {
             
 
           </div>
-          <div className='chat-input-holder'>
-            <form onSubmit={handleSubmit}>
-
-            
-            <input
-            rows="1"
-            
-            value={input}
-            onChange={(e) => setInput(e.target.value)  }
-            className='chat-input-textarea'
-            />
-           
-
-            </form>
-
-          </div>
+          
         </section>
      
      
